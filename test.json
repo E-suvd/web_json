@@ -1,0 +1,24 @@
+{"users": [
+    {
+        "firstname":"Suvd",
+        "Age":22,
+        "isProgrammer": false,
+        "Study":["ML", "DL", "SE"],
+        "Guardian":[{
+            "Firstname":"Myagmarjav",
+            "Relative":"father",
+            "hasPhone":true
+        }]
+    },
+    {
+        "firstname":"Nomin",
+        "Age":24,
+        "isProgrammer": false,
+        "Study":["CS", "AI", "OS"],
+        "Guardian":[{
+            "Firstname":"Amgalan",
+            "Relative":"mother",
+            "hasPhone":true 
+        }]
+    }]
+}
