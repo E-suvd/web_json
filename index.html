@@ -4,25 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table, th, td {
+        border:1px solid black;}
+    </style>
 </head>
 <body>
-    <ul id="result"></ul>
-    <script lang="text/javascript">
-       var xhttp = new XMLHttpRequest();
-       xhttp.onreadystatechange = function(){
-            if(this.readyState == 4 && this.status == 200){
-                var response = JSON.parse(xhttp.responseText);
-                var hereglegch = response.users;
-                var output = '';
-                for(var i = 0; i<hereglegch.length; i++){
-                    output+= '<li>'+hereglegch[i].firstname+'<li>';
-                }
-                console.log(response.users);
-                document.getElementById("result").innerHTML = output;
-            }
-       };
-       xhttp.open("GET", "test.json", true);
-       xhttp.send();
-    </script>
+    <table style="width: 100%;" id="result">
+           
+        <!-- <ul id="result"></ul> -->
+        <script lang="text/javascript">
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    var response = JSON.parse(xhttp.responseText);
+                    var hereglegch = response.student;
+                    var output = '';
+                    for(var i = 0; i<hereglegch.length; i++){
+                            output+= '<tr><th>'+hereglegch[i].name+'</th></tr>';
+                            output+= '<tr><td>'+hereglegch[i].Phone+'</td></tr>';
+                 }
+                    console.log(response.student);
+                    document.getElementById("result").innerHTML = output;
+             }
+            };
+        xhttp.open("GET", "test.json", true);
+         xhttp.send();
+        </script>
+    </table> 
 </body>
 </html>

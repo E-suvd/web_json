@@ -1,24 +1,14 @@
-{"users": [
+{"student": [
     {
-        "firstname":"Suvd",
-        "Age":22,
-        "isProgrammer": false,
-        "Study":["ML", "DL", "SE"],
-        "Guardian":[{
-            "Firstname":"Myagmarjav",
-            "Relative":"father",
-            "hasPhone":true
-        }]
+        "name":"Suvd",
+        "Phone":"99999999",
+        "username":"suvdaa",
+        "pass":"suvd"
     },
     {
-        "firstname":"Nomin",
-        "Age":24,
-        "isProgrammer": false,
-        "Study":["CS", "AI", "OS"],
-        "Guardian":[{
-            "Firstname":"Amgalan",
-            "Relative":"mother",
-            "hasPhone":true 
-        }]
+        "name":"Nomin",
+        "Phone":"88888888",
+        "username":"nomio",
+        "pass":"nomin" 
     }]
 }
